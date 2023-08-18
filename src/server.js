@@ -3,7 +3,7 @@ const initModel = require('./models/initModel');
 const app = require('./app');
 const { db } = require('./database/config');
 const { Server } = require('socket.io');
-const Sockets = require('./Sockets');
+const Sockets = require('./sockets');
 
 db.authenticate()
   .then(() => console.log('Datbase Connected..!'))
